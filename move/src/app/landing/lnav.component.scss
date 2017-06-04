@@ -1,0 +1,32 @@
+@import '../colors';
+
+nav {
+    position: fixed;
+    top: 58px;
+    background: $clouds;
+    width: 100vw;
+
+    > ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        > li {
+            display: inline-block;  
+            padding: 12px;
+
+            > a {
+                margin: 0px 6px;
+                color: #111;
+            }
+            > a.active:before {
+                content: "";
+                position: absolute;
+                border-bottom: 24px solid $clouds;
+                border-right: 15px solid transparent;
+                border-left: 15px solid transparent;
+                bottom: 30px;
+            }
+        }
+    }
+}
